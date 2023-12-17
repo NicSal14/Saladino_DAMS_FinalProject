@@ -48,8 +48,9 @@ buff_tracts_count_dens <- read_csv("buff_tracts_count_dens.csv") %>%
   filter(tree_dens>12) %>% 
   arrange(desc(tree_dens))
 
+# Save this data frame as a .csv file to visualize in a third party (datamapper)
 write.csv(buff_tracts_count_dens, "Phase2_graph_data", row.names = FALSE)
 
-
+# upload phase 3 data, may not need
 high_crash_interx_stat <- read_csv("high_crash_interx_stat.csv")
 
